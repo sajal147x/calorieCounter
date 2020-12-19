@@ -1,0 +1,79 @@
+<link rel="stylesheet" type="text/css" href="style1.css">
+<div id = "container">
+    <h1>Calorie requirement/BMR calculator</h1>
+    <div id = "info">The Calorie Calculator can be used to estimate the number of calories a person needs to consume each day. This calculator can also provide some simple guidelines for gaining or losing weight.</div>
+    <div id = "calculator">
+        <form>
+            <p>Enter Age:
+                <input id ="userAge" type="text" placeholder="eg. 20, 25, 14"> Years (Enter between 15-80)
+            </p>
+            <p>Gender:
+                <select id ="gender">
+                    <option value="Male">Male </option>
+                    <option value="Female">Female </option>
+                </select>
+            </p>
+            <p>Enter Height:
+                <input id="heightFeet" type = "text" placeholder="Feet"> 
+                <input id = "heightInches" type = "text" placeholder="Inches">
+            </p>
+            <p>Enter Weight:
+                <input id= "weight" type = "text">Pounds
+            </p>
+            <p>
+                Activity Level:
+                <select id = "activityLevel">
+                    <option value="1.2">sedentary(Little or no exercise)</option>
+                    <option value="1.375">Lightly Active(light exercise/sports 1-3 days a week)</option>
+                    <option value ="1.55">Moderately Active(moderate exercise/sports 6-7 days a week)</option>
+                    <option value ="1.725">Very Active(hard exercise every day/exercise 2X a day)</option>
+                    <option value ="1.9">Extra Active(hard exercise 2 or more times per day)</option>
+                </select>
+            </p>
+            <p>
+                Body Fat percentage (optional):
+                <input id = "bodyFat" type = "text" placeholder="eg. 10, 15, 20">%
+            </p>
+        </form>
+        <button type = "button" id = "calculate">CALCULATE</button>
+    </div>
+</div>
+<div>
+    <ul>
+        <li><span id ="exerciseTitle">Light Exercise:</span> 15-30 minutes of elevated heart rate activity.</li>
+        <li><span id ="exerciseTitle">Moderate Exercise:</span> 45-120 minutes of elevated heart rate activity</li>
+        <li><span id ="exerciseTitle">Hard Exercise:</span> 2+ hours of elevated heart rate activity.</li>
+    </ul>
+</div> 
+<div id = "container2">
+    <h1>Results: </h1>
+    <div id = "result">
+        <span id = "resultTitle">BMR - </span>
+        <span id = "resultCalsBMR">0</span>
+        <span id = "Caloriesday">Calories/Day</span>
+        <div>
+        <span id = "resultTitle">Maintain Weight -</span>
+        <span id = "resultCals0">0</span>
+        <span id = "Caloriesday">Calories/Day</span>
+        </div>
+        <div>
+        <span id = "resultTitle">Lose 0.5 lbs/week -</span>
+        <span id = "resultCalsHalf">0</span>
+        <span id = "Caloriesday">Calories/Day</span>
+        </div>
+        <span id = "resultTitle">Lose 1 lbs/week -</span>
+        <span id = "resultCals1">0</span>
+        <span id = "Caloriesday">Calories/Day</span>
+        <div>
+        <span id = "resultTitle">Lose 2 lbs/week -</span>
+        <span id = "resultCals2">0</span>
+        <span id = "Caloriesday">Calories/Day</span>
+        </div>
+    </div>
+</div>
+<script type = "text/javascript" src ="calculate.js" ></script>
+                
+            
+
+        
+    
